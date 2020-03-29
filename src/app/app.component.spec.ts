@@ -22,10 +22,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('Crush Them All');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('crush-them-all app is running!');
-  });
 });
