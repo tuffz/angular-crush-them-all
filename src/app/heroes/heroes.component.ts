@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Hero } from "./interfaces/hero";
+import { Hero } from "../hero.interface";
 import { HEROES } from "./mocks/heroes";
 
 @Component({
