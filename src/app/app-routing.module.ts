@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { GatewayComponent }   from './gateway/gateway.component';
+import { GatewayComponent } from './gateway/gateway.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
 const routes: Routes = [
