@@ -5,6 +5,7 @@ import { GatewayComponent } from './gateway/gateway.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/gateway', pathMatch: 'full' },
   { path: 'gateway', component: GatewayComponent },
   { path: 'heroes', component: HeroesComponent }
 ];
