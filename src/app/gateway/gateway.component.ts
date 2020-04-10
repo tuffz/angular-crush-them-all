@@ -4,16 +4,16 @@ import { Hero } from '../hero.interface';
 import { HeroService } from '../hero.service';
 
 @Component({
-  selector: 'app-heroes',
-  templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.css']
+  selector: 'app-gateway',
+  templateUrl: './gateway.component.html',
+  styleUrls: ['./gateway.component.css']
 })
-export class HeroesComponent implements OnInit {
+export class GatewayComponent implements OnInit {
 
   heroes: Hero[];
 
   constructor(
-    private heroService: HeroService,
+    private heroService: HeroService
   ) {
   }
 
@@ -24,7 +24,7 @@ export class HeroesComponent implements OnInit {
   getHeroes(): void {
     this.heroService
       .getHeroes()
-      .subscribe(heroes => this.heroes = heroes)
+      .subscribe(heroes => this.heroes = heroes.slice(1, 5))
       ;
   }
 
