@@ -2,7 +2,9 @@ version: '3.7'
 services:
   crush-them-all:
     container_name: crush-them-all
-    build: .
+    build:
+      context: .
+      target: node-development
     volumes:
       - '.:/usr/src/app'
     ports:
