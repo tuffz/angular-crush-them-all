@@ -18,3 +18,4 @@ FROM nginx:alpine as nginx-production
 
 COPY --from=node-build-production /usr/src/app/dist/crush-them-all /usr/share/nginx/html
 
+COPY --from=node-build-production /usr/src/app/docker/etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
